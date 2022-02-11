@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(0, 68, 255);
+    font-size: huge;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 
+      150px auto 1fr ;
+    grid-template-areas: 
+      "photo info header"
+      "main   main   main     "
+      "footer footer footer";
+  }
+  
+  .header {
+      grid-area: header;
+      background-image: url("https://jeromeobiols.com/wordpress/wp-content/uploads/27012018_JOB3606F-Aiguilles-Chamonix-crespuscule-1920-600x240.jpg")
+      ;background-repeat: no-repeat; background-size:100%;
+  }
+  .main {
+      grid-area: main;
+  }
+  .photo {
+      grid-area: photo;
+  }
+  .info {
+      grid-area: info;
+  }
