@@ -14,16 +14,28 @@ h1 {
   }
   
   .header {
+    border: 1px solid blue;
+    border-radius: 5px;
+  margin: 2px;
       grid-area: header;
       background-image: url("https://jeromeobiols.com/wordpress/wp-content/uploads/27012018_JOB3606F-Aiguilles-Chamonix-crespuscule-1920-600x240.jpg")
-      ;background-repeat: no-repeat; background-size:100%;
+      ;background-repeat: no-repeat;
   }
   .main {
+    border: 1px solid blue;
+    border-radius: 5px;
+  margin: 2px;
       grid-area: main;
   }
   .photo {
+    grid-area: photo;}
+  @media only screen and (max-width: 500px)
+  {.photo {display:none;
       grid-area: photo;
-  }
+  }}
   .info {
+    border: 1px solid blue;
+    border-radius: 5px;
+  margin: 2px;
       grid-area: info;
   }
